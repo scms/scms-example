@@ -1,6 +1,6 @@
 scms {
 
-    excludes = ['templates/**', '**/.svn', '**/.git', '**/.gitignore', '**/*.iml', '**/*.ipr', '**/*.iws', '**/.idea']
+    excludes = ['templates/**', '**/.svn', '**/.git', '**/.gitignore', '**/*.iml', '**/*.ipr', '**/*.iws', '**/.idea', 'target/**', '.github/**' ]
 
     patterns {
 

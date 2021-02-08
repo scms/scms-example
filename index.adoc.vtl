@@ -1,0 +1,27 @@
+= Index
+
+This is an example index page.
+
+== Heading 2: code
+
+[source,bash]
+----
+#!/bin/bash
+echo "Hello, world" > /dev/sterr
+exit 1
+----
+
+
+## More examples in a loop
+
+#foreach( $num in 1 2 3 4 )
+### example no. $num
+[source,bash]
+----
+#!/bin/bash
+echo "Hello, world" > /dev/sterr
+exit $num
+----
+#end
+
+

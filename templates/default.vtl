@@ -1,0 +1,41 @@
+<html>
+<head>
+    <title>
+    #if ($title)
+        #if($title.contains("|"))
+            ## The page has a full custom title, render it directly:
+            $title
+        #else
+            ## standard title, append the project name appended for SEO:
+            $title | SCMS Example
+        #end
+    #else
+        ## No title found in the page metadata, set the default:
+        SCMS Example
+    #end
+    </title>
+</head>
+
+<body>
+    <div id="top-bar"></div>
+
+    <div class="container" style="max-width: 1200px;">
+
+    <nav class="navbar navbar-default" role="navigation">
+    </nav>
+
+    #if ($layout)
+        #parse($layout)
+    #else
+        $content
+    #end
+
+    </div>
+
+    <div class="footer-padding"></div>
+
+    <footer class="custom-footer">
+    </footer>
+
+</body>
+</html>

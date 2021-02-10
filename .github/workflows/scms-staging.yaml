@@ -19,7 +19,7 @@ jobs:
 
       # Runs a single command using the runners shell
       - name: Check using scms
-        uses: scms/scms-github-action@9-output-branch
+        uses: scms/scms-github-action@v1
         with:
           outputbranch: site-staging
           verbose: true
